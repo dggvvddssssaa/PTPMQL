@@ -1,7 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Demo Page";
+    ViewData["Title"] = "Demo Buổi 3";
 }
 
-Tạo project DemoMVC148 + 3 số cuối của MSSV của bạn. ==> Đẩy lên GitHub ==> điểm danh
-Tạo Controller DemoController
-Tạo View Index ==> Chứa nội dung Buổi số 3
+<h2>@ViewBag.Message</h2>
+
+<ul>
+    <li><a href="/Demo/GoToGoogle">RedirectResult → Google</a></li>
+    <li><a href="/Demo/RedirectToDemo">RedirectToActionResult → Quay về Index</a></li>
+    <li><a href="/Demo/GetJson">JsonResult → Dữ liệu JSON</a></li>
+    <li><a href="/Demo/DownloadFile">FileResult → Tải file mẫu</a></li>
+    <li><a href="/Demo/ErrorPage">StatusCodeResult → Hiển thị lỗi 404</a></li>
+</ul>
