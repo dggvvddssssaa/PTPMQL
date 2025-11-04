@@ -1,0 +1,16 @@
+<h2>Nhập dữ liệu từ View gửi lên Controller</h2>
+
+<form method="post">
+    <label>Họ tên:</label>
+    <input type="text" name="username" required /><br><br>
+
+    <label>Tuổi:</label>
+    <input type="number" name="age" required /><br><br>
+
+    <button type="submit">Gửi</button>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <h3>@ViewBag.Result</h3>
+}

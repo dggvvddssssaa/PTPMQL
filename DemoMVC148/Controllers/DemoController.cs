@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using DemoMVC148.Models;
 
 namespace DemoMVC148.Controllers
 {
@@ -48,5 +49,52 @@ namespace DemoMVC148.Controllers
         {
             return StatusCode(404, "Trang bạn yêu cầu không tồn tại!");
         }
+        public IActionResult DataDemo()
+        {
+            ViewBag.Message = "Xin chào từ ViewBag!";
+            ViewData["Note"] = "Đây là dữ liệu từ ViewData.";
+            TempData["Temp"] = "Dữ liệu này đến từ TempData (sẽ còn sau redirect).";
+            return View();
+        }
+
+        public IActionResult TempDataResult()
+        {
+            // Lấy lại dữ liệu từ TempData (sau khi redirect)
+            var tempMessage = TempData["Temp"];
+            ViewBag.TempMessage = tempMessage;
+            return View();
+        }
+
+        public IActionResult RedirectTemp()
+        {
+            TempData["Temp"] = "Dữ liệu qua redirect thành công!";
+            return RedirectToAction("TempDataResult");
+        }
+        public IActionResult InputDemo()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult InputDemo(string username, int age)
+        {
+            ViewBag.Result = $"Xin chào {username}, bạn {age} tuổi!";
+            return View();
+        }
+        // Hiển thị form nhập
+        [HttpGet]
+        public IActionResult StudentForm()
+        {
+            return View();
+        }
+
+        // Nhận dữ liệu từ form (POST)
+        [HttpPost]
+        public IActionResult StudentForm(Student student)
+        {
+            // Gửi dữ liệu qua View hiển thị kết quả
+            return View("StudentResult", student);
+        }
+
     }
 }

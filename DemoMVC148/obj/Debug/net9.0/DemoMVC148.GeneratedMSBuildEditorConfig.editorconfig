@@ -24,6 +24,22 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Hoctap/PTPMQL/DemoMVC148/Views/Demo/InputDemo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xJbnB1dERlbW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Hoctap/PTPMQL/DemoMVC148/Views/Demo/StudentForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xTdHVkZW50Rm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Hoctap/PTPMQL/DemoMVC148/Views/Demo/StudentResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xTdHVkZW50UmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Hoctap/PTPMQL/DemoMVC148/Views/Demo/TempDataResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xUZW1wRGF0YVJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Hoctap/PTPMQL/DemoMVC148/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
