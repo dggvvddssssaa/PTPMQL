@@ -31,6 +31,7 @@ namespace DemoMVC148.Controllers
         [HttpPost]
         public IActionResult GiaiPTB2(double a, double b, double c)
         {
+            Console.WriteLine($"a={a}, b={b}, c={c}");
             string kq;
             if (a == 0)
             {

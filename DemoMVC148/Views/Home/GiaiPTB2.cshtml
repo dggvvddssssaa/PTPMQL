@@ -2,24 +2,22 @@
     ViewData["Title"] = "Giải phương trình bậc 2";
 }
 
-<h2>Giải phương trình bậc 2: ax² + bx + c = 0</h2>
+<h2>Giải phương trình bậc 2</h2>
 
-<form method="post">
-    <label>a:</label>
-    <input type="number" name="a" step="any" required />
+<form method="post" asp-action="GiaiPTB2">
+    <label>Nhập a:</label>
+    <input type="number" step="any" name="a" required /><br /><br />
 
-    <label>b:</label>
-    <input type="number" name="b" step="any" required />
+    <label>Nhập b:</label>
+    <input type="number" step="any" name="b" required /><br /><br />
 
-    <label>c:</label>
-    <input type="number" name="c" step="any" required />
+    <label>Nhập c:</label>
+    <input type="number" step="any" name="c" required /><br /><br />
 
-    <br /><br />
-
-    <button type="submit">Giải</button>
+    <button type="submit">Giải phương trình</button>
 </form>
 
 @if (ViewBag.KetQua != null)
 {
-    <h3>@ViewBag.KetQua</h3>
+    <h3>Kết quả: @ViewBag.KetQua</h3>
 }
