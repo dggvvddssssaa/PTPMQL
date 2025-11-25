@@ -20,7 +20,6 @@ namespace DemoMVC148.Controllers
         {
             _context = context;
         }
-
         public async Task<IActionResult> Index()
         {
             var model = await _context.Person.ToListAsync();

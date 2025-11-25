@@ -1,19 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using DemoMVC148.Models;
+using DemoMVC148.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace DemoMVC148.Controllers
 {
-    public class DemController : Controller
+    public class StudentController : Controller
     {
-        public IActionResult Index()
+        private readonly ApplicationDbContext _context;
+
+        public StudentController(ApplicationDbContext context)
         {
-            return View();
+            _context = context;
         }
-        [HttpPost]
-        public IActionResult Index(string studentName, int studentAge)
+        public async Task<IActionResult> Index()
         {
-            ViewBag.Message = $"Student Name: {studentName}, Age: {studentAge}";
-            return View();
+            var model = await _context.Student.ToListAsync();
+            return View(model);
         }
 
 

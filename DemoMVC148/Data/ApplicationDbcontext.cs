@@ -7,8 +7,8 @@ namespace DemoMVC148.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
-
-        // Đổi tên DbSet thành People (có thể đổi thành Persons nếu bạn thích)
         public DbSet<Person> Person { get; set; }
+
+        public DbSet<Student> Student { get; set; }
     }
 }

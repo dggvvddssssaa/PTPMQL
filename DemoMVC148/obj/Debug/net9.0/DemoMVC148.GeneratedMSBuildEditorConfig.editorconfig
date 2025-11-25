@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xUZW1wRGF0YVJlc3VsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Hoctap/PTPMQL/DemoMVC148/Views/Hello/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Hoctap/PTPMQL/DemoMVC148/Views/Home/GiaiPTB2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHaWFpUFRCMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
